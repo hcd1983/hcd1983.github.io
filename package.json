@@ -1,0 +1,22 @@
+{
+  "name": "twdg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muan/twdg.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muan/twdg/issues"
+  },
+  "homepage": "https://github.com/muan/twdg#readme",
+  "dependencies": {
+    "geolib": "^2.0.22"
+  }
+}

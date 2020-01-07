@@ -1,7 +1,106 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype>
+<html manifest="site.appcache">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="goodeye.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="goodeye.png" />
+  <script type="text/javascript" src="tabletop.js"></script>
+  <title>Good Eye Taipei</title>
+</head>
+<body class="ph3">
+  <header class="measure center">
+    <h1 class="f1 mv3">
+      <img src="./heading.png" alt="Good Eye Taipei" width="180">
+      <a href="http://www.books.com.tw/products/0010743506" target="_blank"
+         class="absolute dib tail br-pill link tracked normal f7 v-top bg-gold white">GET THE BOOK!</a>
+    </h1>
+    <noscript>JavaScript is required for this web app.</noscript>
+  </header>
+  <main id="main" class="measure center pb3">
+    <div class="eye"><div class="eyeball"></div></div><div class="eye"><div class="eyeball"></div></div>
+  </main>
+
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  <style type="text/css">
+    body { font-family: 'Rubik', sans-serif; }
+    @keyframes rotate {
+      0% { transform: rotate(15deg); transform-origin: 0px 20px; }
+      50% { transform: rotate(90deg); transform-origin: 0px 20px; }
+      100% { transform: rotate(15deg); transform-origin: 0px 20px; }
+    }
+
+    @keyframes pop {
+      0% { width: 0; color: transparent; transform-origin: 0% 50%; }
+      15% { width: 134px; color: #fff; transform-origin: 0% 50%; }
+      85% { width: 134px; color: #fff; transform-origin: 0% 50%; }
+      100% { width: 0; color: transparent; transform-origin: 0% 50%; }
+    }
+
+    body {
+      word-wrap: break-word;
+    }
+
+    .eye {
+      margin: 50px 0;
+      width: 36px;
+      height: 52px;
+      border: 8px solid #ccc;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    .eyeball {
+      animation: 3s rotate infinite;
+      margin-left: 2px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+
+    .tail {
+      font-size: 12px;
+      color: transparent;
+      padding: 8px 14px;
+      white-space: nowrap;
+      width: 0;
+      height: 28px;
+      margin: 40px -35px;
+      animation: 3.5s pop ease-out;
+    }
+
+    .tail:before {
+      border: 6px solid transparent;
+      border-right-color: #FFB700;
+      left: -9px;
+      top: 2px;
+      content: "";
+      display: block;
+      transform: rotate(20deg);
+      position: absolute;
+    }
+
+    .empty-filler:empty {
+      width: 80%;
+      height: 0.8em;
+      background: #eee;
+      border-right: 100px solid #fff;
+      box-shadow: 0 1.5em 0 0 #eee;
+      margin-bottom: 3em;
+    }
+  </style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
+
+    ga('create', 'UA-21332781-20', 'auto')
+  </script>
+  <script type="text/javascript" src="site.js"></script>
+  <script type="text/javascript" src="geolib/dist/geolib.js"></script>
 </body>
 </html>

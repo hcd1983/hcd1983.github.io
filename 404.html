@@ -1,0 +1,12 @@
+---
+permalink: /404.html
+---
+
+<script type="text/javascript">
+  // Bug in QR code encoding, everything gets parsed as %23 instead of #
+  if (location.pathname.match(/\/%23.+/)) {
+    location.href = location.pathname.replace(/%23/, "#")
+  } else {
+    window.onload = function () { document.body.innerText = 'Not found.' }
+  }
+</script>
